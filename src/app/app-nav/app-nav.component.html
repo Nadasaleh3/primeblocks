@@ -1,0 +1,80 @@
+<!-- <mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      @if (isHandset$ | async) {
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      }
+      <span>PrimeBlocks</span>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  <!-- </mat-sidenav-content>
+</mat-sidenav-container> --> 
+
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+      <!-- <mat-toolbar>Menu</mat-toolbar> -->
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="background-color: white; padding: 4%; ">
+        <img src="assets/logo.png" width="50"  class="d-inline-block align-top " alt="">
+      <span class="title" style="font-size: 50px; font-weight: bold">
+        <span style="color:black " >Prime</span>
+        <span style="color:#8DA5B0">Blocks</span></span>
+      <div class="content"  style="padding :2%" *ngIf="(isHandset$ | async) === false">
+        <a  mat-button class="nav-item" style="padding :2%; color:grey; " routerLink="blocks">BLOCKS</a>
+        <a class="nav-item" mat-button  style=" padding :2%;color:grey;"routerLink="documentation">DOCUMENTATION</a>
+        <a class="nav-item" mat-button style=" padding :2%;color:grey;" routerLink="pricing">PRICING</a>
+      </div>
+      <button *ngIf="isHandset$ | async"
+              type="button"
+              aria-label="Toggle sidenav"
+              mat-icon-button
+              (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+    <div class="navbar " style="background-color:white; margin:0%; padding:0%">
+  
+      <div style="display: flex;">  
+      <button mat-icon-button routerLink="/">
+          <mat-icon>home</mat-icon> 
+       
+     
+      </button>
+      <h1>{{ currentPageName }}</h1>
+       </div>
+
+      
+    </div>
+    
+   
+
+  
+    <router-outlet></router-outlet>
+ 
+  </mat-sidenav-content>
+
+ 
+</mat-sidenav-container>

@@ -1,0 +1,119 @@
+<body>
+    <!-- <img src="assets/cover.jpg" width="100%" heght="30px"  class="d-inline-block align-top " alt="">     -->
+<app-background></app-background>
+    <p>All licences share same terms and only differ in per-seat limits, visit the <span (click)="openExternalLink()"
+            style="cursor:pointer;color:blue">license</span> page for terms and conditions.</p>
+    <div class="content  flex-item"> <app-pricing-card borderColor="#007bff" buttonColor="#007bff"
+            [checkmarkColor]="'#007bff'" [title]="'Single Developer'" [desrption]="'For individual developers'"
+            [price]="'$199'"
+            [features]="['1 Developer', 'Marketing Blocks', 'Application UI Blocks', 'E-Commerce Blocks', 'Figma File', 'Lifetime Support', 'Unlimited Updates', 'Use on Unlimited Projects']">
+
+        </app-pricing-card>
+
+        <app-pricing-card borderColor="orange" buttonColor="orange" checkmarkColor="orange" [title]="'Team'"
+            [desrption]="'For small teams'" [price]="'$699'"
+            [features]="['Up to 25 Developers','Marketing Blocks','Application UI Blocks','E-Commerce Blocks','Figma File','Lifetime Support','Unlimited Updates', 'Use on Unlimited Projects']">
+        </app-pricing-card>
+        <app-pricing-card borderColor="grey" buttonColor="grey" checkmarkColor="grey" [title]="'Enterprise'"
+            [desrption]="'For larger teams'" [price]="'Exclusive Deals'"
+            [features]="['Unlimited Developers','Marketing Blocks','Application UI Blocks','E-Commerce Blocks','Figma File','Lifetime Support','Unlimited Updates', 'Use on Unlimited Projects']">
+        </app-pricing-card>
+    </div>
+
+    <div class="footer  flex-item" style="background-color:grey; color:white; width:100%">
+        <div style="padding: 2%;">
+            <h1>User Community</h1>
+            <p>The creator of PrimeNG is PrimeTek Informatics, the distinguished component library vendor who built
+                vastly popular open source projects such as PrimeFaces,
+                PrimeNG, PrimeReact and PrimeVue over the past years.</p>
+        </div>
+        <div class="photos " style="padding: 2%;">
+            <div> <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/airbus.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/amex.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/nvidia.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/ebay.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/ford.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/fox.svg" alt="UI Image">
+            </div>
+
+            <div>
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/lufthansa.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/mercedes.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/sap.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/unicredit.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/verizon.svg" alt="UI Image">
+
+                <img mat-card-image src="https://blocks.primeng.org/assets/images/pricing/airbus.svg" alt="UI Image">
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+        <div>
+            <h1 style="font-size: 50px;  margin: 5%;">Frequently Asked Questions</h1>
+            <div class="questions">
+
+                <app-question-card [question]="'What do I get when I purchase a license?'"
+                    [answer]="' You`ll be able to download this application as an Angular CLI project that unlocks all the code views along with the full source code.'">
+                </app-question-card>
+                <app-question-card [question]="'Is there a recurring fee or is the license perpetual?'"
+                    [answer]="' PrimeBlocks license is perpetual so required one time payment not subscription based.<'">
+                </app-question-card>
+                <app-question-card [question]="'Can I use PrimeBlocks license for commercial projects?<'"
+                    [answer]="' Yes, your license allows you to sell your projects that utilize PrimeBlocks'">
+                </app-question-card>
+                <app-question-card [question]="'Can I create multiple projects for multiple clients?'"
+                    [answer]="'There is no limit, you are able to use PrimeBlocks in multiple projects for multiple clients.</'">
+                </app-question-card>
+                <app-question-card
+                    [question]="' Wh`re a reseller, are we able to purchase a license on behalf of our client?'"
+                    [answer]="' Yes, after the purchase, please contact us so we can transfer the license to your client.'">
+                </app-question-card>
+                <app-question-card
+                    [question]="'Does the enterprise license include contractors within the organization?'"
+                    [answer]="'Yes, contractors are also able to use the PrimeBlocks within your company.'">
+                </app-question-card>
+                <app-question-card
+                    [question]="'Can subsidiary company of a larger organization share the enterprise license?'"
+                    [answer]="' No, enterprise license is per company so each subsidiary company needs to purchase a separate license.'">
+                </app-question-card>
+                <app-question-card [question]="'What does ``free updates`` mean?'"
+                    [answer]="' All updates including new designs and blocks will be totally free of charge for existing customers.'">
+                </app-question-card>
+                <app-question-card [question]="'Is there a maintenance period for PrimeBlocks and the support?'"
+                    [answer]="'No, updates are free of charge and support is available for unlimited period.'">
+                </app-question-card>
+                <app-question-card [question]="'How can I get support?'"
+                    [answer]="'Support is provided by PrimeTek via a dedicated forum channel monitored by PrimeTek support staff.'">
+                </app-question-card>
+                <app-question-card [question]="'What does lifetime support mean?'"
+                    [answer]="'Support service at the forum does not have a time limit.'">
+                </app-question-card>
+                <app-question-card [question]="'Can I use PrimeBlocks in open-source projects?'"
+                    [answer]="'Due to the license, it is not possible to use the blocks in an open source project where code is publicly available.'">
+                </app-question-card>
+                <app-question-card [question]="'What JS framework does PrimeBlocks use?'"
+                    [answer]="'Each Prime UI component library has its own PrimeBlocks version, PrimeBlocks for Angular uses PrimeNG.'">
+                </app-question-card>
+                <app-question-card [question]="'What browsers does PrimeBlocks support?'"
+                    [answer]="'PrimeBlocks supports IE11, Firefox, Safari, Chrome and Edge.'">
+                </app-question-card>
+         
+
+
+        </div>
+        </div></body>
+

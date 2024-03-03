@@ -1,0 +1,20 @@
+.container {
+    position: fixed;
+    top: 50%;
+    /* right:-1000px; */
+    right:-80%;
+  
+    transform: translateY(-50%);
+    z-index:999;
+   
+ 
+  }
+  
+  button {
+    background-color: rgb(119, 119, 224);
+    color:white;
+ padding-top: 5px;
+ border:none;
+ 
+ border-radius: 10%;
+  }

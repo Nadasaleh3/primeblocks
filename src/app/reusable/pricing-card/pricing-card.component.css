@@ -1,0 +1,54 @@
+.card {
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: start;
+    width: 300px;
+    margin: 20px;
+  }
+ h1{
+    font-weight: bold;
+ }
+  
+  button {
+    background-color: buttoncolor;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+
+  }
+  
+  /* button:hover {
+    background-color:#007bff;
+  } */
+.checkmark {
+    list-style-type: none;
+ 
+    padding-left: 0;
+  }
+  
+  .checkmark li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add space between features */
+  }
+  .checkmarktrue{
+ 
+    color: white;
+    font-size: 12px; /* Adjust the size of the checkmark */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Width of the checkmark */
+    height: 20px; /* Height of the checkmark */
+    border-radius: 50%; /* Ensure the checkmark is within a circle */
+
+
+    margin-right: 6px;
+  }
+ 
+  

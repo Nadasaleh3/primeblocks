@@ -1,0 +1,34 @@
+<div class="sidebar-content" style="background-color:white ; width: 200px;  height: 100vh; padding:7%">
+    <div class="sidebar-section" style="  flex: 1; ">
+
+
+      <img style="padding-bottom:15%" src="https://blocks.primeng.org/assets/images/blocks/logos/hyper-700.svg" width="90" class="el el-align-start"  alt="">
+     
+     
+       
+      
+      <div class="sidebar-subsection " style="cursor:pointer ;">
+        <ul (click)="toggleOption1()">
+        <h1 >FAVORITES</h1> </ul>
+        <ul *ngIf="showOption1">
+          <li><i class="pi pi-home"></i> Dashboard</li>
+          <li><i class="pi pi-bookmark"></i> Reports</li>
+          <li><i class="pi pi-chart-line"></i> Team</li>
+        </ul>
+      </div>
+      <div class="sidebar-subsection" style="cursor:pointer ;">
+        <ul (click)="toggleOption2()">
+        <h1>Application </h1></ul>
+        <ul *ngIf="showOption2">
+          <li><i class="pi pi-file "></i> Projects</li>
+          <li><i class="pi pi-chart-line"></i> performance</li>
+          <li> <i class="pi pi-cog"></i> setting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="column-name">
+      <img class="profile-icon" src="assets/profile.png" alt="Profile Photo">
+  <span>Amy Elsaner</span>
+    </div>
+  
+  </div>

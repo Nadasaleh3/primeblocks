@@ -1,0 +1,23 @@
+.profile-info{
+    display: flex;
+    align-items: start;
+     
+    }
+    .icons{
+      color:white;
+      padding-top: 17px; height: 50px; width: 50px; border-radius: 50%; text-align: center;
+    }
+    .container-body{
+      display: flex; 
+      background-color: white;
+      align-items: center;
+    justify-content: space-between; 
+    padding: 2%;
+    }
+
+    h3{
+      font-size: 13px;
+      font-weight: 500;
+      color: rgb(174, 169, 169);
+    }
+  

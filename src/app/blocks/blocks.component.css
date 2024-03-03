@@ -1,0 +1,22 @@
+
+mat-card{
+    padding: 1%;
+    margin: 3%;
+}
+
+mat-divider{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: inline-flex;
+}
+
+/*   
+ .overlay{
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+ } */

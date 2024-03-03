@@ -1,0 +1,13 @@
+<div class="card"  [ngStyle]="{'border-color':borderColor}">
+    <h2>{{ title }}</h2>
+    <h3>{{desrption}}</h3>
+    <mat-divider></mat-divider>
+    <h1>{{ price }}</h1>
+    <mat-divider></mat-divider>
+    <ul class="checkmark">
+      <li *ngFor="let feature of features " > <span class="checkmarktrue" [ngStyle]="{'background-color':checkmarkColor}" >&#10003;</span>{{feature }} </li>
+    </ul>
+    <button [ngStyle]="{'background-color':buttonColor}" (click)="buyNow()">Buy Now</button>
+  </div>
+
+  

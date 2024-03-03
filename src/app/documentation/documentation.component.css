@@ -1,0 +1,36 @@
+body{
+    padding:2%;
+    margin:2% ;
+  
+}
+*{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+p,pre{
+    font-size: 16px;
+
+}
+code,a{
+
+background-color: white;
+
+}
+a{
+    color:lightblue
+}
+.code{
+    /* padding: 1%; */
+    height: auto;
+    background-color: white;
+    /* overflow-x: auto;
+    box-shadow: 0 0 0 ; */
+}

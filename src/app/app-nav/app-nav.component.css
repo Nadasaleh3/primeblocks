@@ -1,0 +1,42 @@
+/* .sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+} */
+
+
+.title {
+  flex: 1;
+}
+
+.nav-item{
+  color: rgb(209, 200, 200);
+  font-size: 18px;
+  font-weight: bold;
+  
+  }
+  a{
+    position: relative;
+    font-size: 16px;
+  
+  }
+
+ a:active{
+  color: black;
+ 
+  border-bottom: 2px solid indigo;
+}
+
+

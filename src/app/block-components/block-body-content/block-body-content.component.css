@@ -1,0 +1,61 @@
+::ng-deep .pi.pi-map-marker {
+ background-color: rgb(241, 179, 128);
+    color: rgb(255, 115, 0);
+
+
+}
+::ng-deep .pi-shopping-cart {
+    background-color: rgb(181, 181, 241);
+       color: blue;
+     
+   
+   }
+
+   ::ng-deep .pi-comment {
+    background-color:rgb(220, 183, 247) ;
+       color: indigo;
+     
+   
+   }
+   ::ng-deep .pi-user-plus {
+    background-color: rgb(157, 235, 231);
+       color: rgb(7, 111, 104);
+     
+   
+   }
+   app-block-card{
+    width:260px;
+    height: 140px;
+
+   }
+
+   .post-card {
+    max-width: 900px; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+ 
+  
+  .mat-card-title {
+    font-weight: bold; 
+  }
+
+  menu-icon-container {
+    text-align: center;
+
+  }
+  
+  .menu-button {
+ background-color: rgb(244, 171, 115);
+ color:white
+  }
+  
+  .vertical-line {
+    width: 1px; 
+    height: 120px;
+    background-color: rgb(244, 171, 115);
+    margin: 0 auto; 
+  }
+  
+ 

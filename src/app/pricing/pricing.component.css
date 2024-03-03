@@ -1,0 +1,41 @@
+body{
+    
+        /* padding:2%; */
+        /* margin:2% ; */
+      
+    
+    text-align: center;
+}
+
+div.content {
+    flex-wrap: wrap;
+    display: inline-flex;
+  
+    
+}
+img{
+    padding: 3%;
+    padding-bottom: 0%;
+  
+}
+.footer{
+    margin: 0%;
+
+    margin-left:0% ;
+  
+    text-align: center;
+}
+.questions{
+ text-align: start;
+}
+
+
+.questions h2{
+    font-size: 35px; 
+    font-weight: 400;
+}
+.questions p{
+    font-size: 25px;
+     font-weight: 350;
+     color:rgb(105, 105, 105);
+}

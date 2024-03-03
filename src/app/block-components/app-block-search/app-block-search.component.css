@@ -1,0 +1,29 @@
+.profile-icon{
+    height: 30px;
+}
+.input-group {
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: space-between; /* Add space between left and right sides */
+    background-color: white; /* Set background color to white */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+.search-icon {
+    position: absolute;
+    left: 10px; /* Adjust distance from left edge of input field */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-input {
+    padding-left: 40px; /* Adjust padding to make space for icon */
+    border: none; /* Remove border */
+    background-color: transparent; /* Set background color to transparent */
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+}
+.left-side {
+    display: flex;
+    align-items: center;
+}
